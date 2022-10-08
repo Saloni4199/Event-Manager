@@ -4,7 +4,6 @@ import { ToastrService } from 'src/services/toastr.service';
 
 
 @Component({
-  selector: 'app-event-list',
   templateUrl: './event-list.component.html',
 })
 export class EventListComponent implements OnInit{
