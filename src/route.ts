@@ -1,8 +1,8 @@
 import { Routes } from "@angular/router"
-import { CreateEventComponent } from "./app/create-event/create-event.component"
+import { CreateEventComponent } from "./app/Event/create-event/create-event.component"
 import { Error404Component } from "./app/error/404.component"
-import { EventDetailComponent } from "./app/event-detail/event-detail.component"
-import { EventListComponent } from "./app/Event-list/event-list.component"
+import { EventDetailComponent } from "./app/Event/event-detail/event-detail.component"
+import { EventListComponent } from "./app/Event/Event-list/event-list.component"
 import { EventRouteGuard } from "./services/event-route-guard.service"
 
 export const appRoutes:Routes = [

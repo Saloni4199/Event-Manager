@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { ActivatedRouteSnapshot, CanActivate, CanDeactivate, Resolve, Router, RouterStateSnapshot, UrlTree} from "@angular/router";
 import { map, Observable } from "rxjs";
-import { CreateEventComponent } from "src/app/create-event/create-event.component";
+import { CreateEventComponent } from "src/app/Event/create-event/create-event.component";
 import { EventService } from "./event.service";
 
 @Injectable({

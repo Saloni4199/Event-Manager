@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { EventAppComponent } from './Event-App/event-app.component';
-import { EventListComponent } from './Event-list/event-list.component';
-import { EventThumbnailComponent } from './event-thumbnail/event-thumbnail.component';
+
+import {
+  EventAppComponent,
+  EventListComponent,
+  EventThumbnailComponent,
+  EventDetailComponent,
+  CreateEventComponent
+} from './index'
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { EventDetailComponent } from './event-detail/event-detail.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from 'src/route';
-import { CreateEventComponent } from './create-event/create-event.component';
 import { Error404Component } from './error/404.component';
 
 
