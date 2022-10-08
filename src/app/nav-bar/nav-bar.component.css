@@ -9,3 +9,6 @@ margin-right: 100px;
         display: none;
     }
 }
+li > a.active{
+    color: orange;
+}
