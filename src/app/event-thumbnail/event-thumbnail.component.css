@@ -1,3 +1,15 @@
 .thumbnail{
     min-height: 210px;
 }
+.green{
+    color: green !important;
+}
+.bold{
+    font-weight: bolder;
+}
+.red{
+    color: red !important;
+}
+.yellow{
+    color: yellow !important;
+}
