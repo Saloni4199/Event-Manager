@@ -7,9 +7,10 @@ import { EventRouteGuard } from "./services/event-route-guard.service"
 
 export const appRoutes:Routes = [
     { path: "events/new", component: CreateEventComponent, canDeactivate:[EventRouteGuard]},
-    {path: "events", component: EventListComponent},
+    {path: "events", component: EventListComponent, resolve: {events: EventRouteGuard}},
     { path: "events/:id", component: EventDetailComponent, canActivate: [EventRouteGuard]},
     {path: "404", component: Error404Component},
-    { path:"" , redirectTo: "/events", pathMatch:"full"}
+    { path:"" , redirectTo: "/events", pathMatch:"full"},
+    {path: 'user', loadChildren : () => import('./app/User/user.module').then(m=>m.UserModule) }
 
 ]

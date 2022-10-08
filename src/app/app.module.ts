@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { EventAppComponent } from './Event-App/event-app.component';
@@ -25,8 +24,7 @@ import { Error404Component } from './error/404.component';
   ],
   imports: [
     BrowserModule,
-    CommonModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
   ],
   bootstrap: [EventAppComponent]
 })
