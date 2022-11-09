@@ -1,2 +1,5 @@
 export * from './Event.model'
 export * from './User.model'
+export * from './restricted-words.validators'
+export * from './collapsible-well/collapsible-well.component'
+export * from './duration.pipe'

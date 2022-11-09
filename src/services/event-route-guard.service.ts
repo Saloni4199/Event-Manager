@@ -16,7 +16,7 @@ export class EventRouteGuard implements CanActivate, CanDeactivate<CreateEventCo
     }
     canDeactivate(component: CreateEventComponent): boolean{
         if(component.isDirtyState)
-            return window.confirm("you have not saved this event, do you really want to cancel?");
+            return window.confirm("You have not saved this event, do you really want to cancel?");
         return true;
     }
     canActivate(route: ActivatedRouteSnapshot):boolean{

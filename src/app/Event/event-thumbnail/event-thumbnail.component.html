@@ -1,12 +1,12 @@
 <div [routerLink]="['/events',eventFromList.id]" class="well hoverwell thumbnail">
-    <h2>{{eventFromList?.name}}</h2>
-    <div>Date: {{eventFromList?.date}}</div>
-    <div [ngClass]="getStartTimeClass()" [ngSwitch] = "eventFromList?.time"> Time: {{eventFromList?.time}} 
+    <h2>{{eventFromList?.name | uppercase}}</h2>
+    <div>Date: {{eventFromList?.date | date:'shortDate'}}</div>
+    <div [ngClass]="getStartTimeClass()" [ngSwitch] = "eventFromList?.time"> Time: {{eventFromList?.time }} 
         <span *ngSwitchCase="'8:00 am'">(Early Time)</span>
         <span *ngSwitchCase="'10:00 am'">(Late Time)</span>
         <span *ngSwitchDefault>(Normal Time)</span>
     </div>
-    <div> Price: $ {{eventFromList?.price}}</div>
+    <div> Price: {{eventFromList?.price | currency:'USD'}}</div>
     <div *ngIf="eventFromList?.location"> Location:  {{eventFromList.location.address}} {{eventFromList.location.city}}, {{eventFromList.location.country}}</div>
     <div *ngIf="eventFromList?.OnlineUrl"> OnlineUrl : {{eventFromList.OnlineUrl}}</div>
 </div>
