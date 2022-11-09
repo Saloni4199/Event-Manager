@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import {
   EventAppComponent,
   EventListComponent,
   EventThumbnailComponent,
   EventDetailComponent,
-  CreateEventComponent
+  CreateEventComponent,
+  CreateSessionComponent,
+  SessionListComponent,
+  CollapsibleWellComponent,
+  DurationPipe
 } from './index'
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterModule } from '@angular/router';
@@ -23,10 +28,16 @@ import { Error404Component } from './error/404.component';
    NavBarComponent,
    EventDetailComponent,
    CreateEventComponent,
-   Error404Component
+   Error404Component,
+   CreateSessionComponent,
+   SessionListComponent,
+   CollapsibleWellComponent,
+   DurationPipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes),
   ],
   bootstrap: [EventAppComponent]
